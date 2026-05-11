@@ -16,26 +16,24 @@ A study timer app with subject tags, session history, analytics, and WiFi sync b
 
 ## Installation
 
+### Downloads
+
+| Platform | Download |
+|----------|----------|
+| Android | [StudyTimer.apk](https://github.com/Karthik-PM/study_timer/releases/latest/download/StudyTimer.apk) |
+| Linux (Debian/Ubuntu) | [study-timer_1.0.0_amd64.deb](https://github.com/Karthik-PM/study_timer/releases/latest/download/study-timer_1.0.0_amd64.deb) |
+
+Or visit the [releases page](https://github.com/Karthik-PM/study_timer/releases/latest) to download manually.
+
+---
+
 ### Android (Mobile)
 
-#### Option 1 — Download over WiFi (easiest)
+#### Option 1 — Direct download (easiest)
 
-1. Make sure your phone and computer are on the **same WiFi network**
-2. On the computer, start the APK server:
-   ```bash
-   cd apk-server
-   python3 -m http.server 8080
-   ```
-3. Find your computer's local IP:
-   ```bash
-   hostname -I | awk '{print $1}'
-   ```
-4. On your phone, open a browser and go to:
-   ```
-   http://<your-computer-ip>:8080/StudyTimer.apk
-   ```
-5. Tap the downloaded file to install
-6. If prompted, enable **Install from unknown sources** in Settings → Security
+1. Download [StudyTimer.apk](https://github.com/Karthik-PM/study_timer/releases/latest/download/StudyTimer.apk)
+2. Tap the downloaded file to install
+3. If prompted, enable **Install from unknown sources** in Settings → Security
 
 #### Option 2 — USB install
 
@@ -59,6 +57,8 @@ flutter build apk --release
 
 #### Option 1 — Install the .deb package (easiest)
 
+1. Download [study-timer_1.0.0_amd64.deb](https://github.com/Karthik-PM/study_timer/releases/latest/download/study-timer_1.0.0_amd64.deb)
+2. Run:
 ```bash
 sudo dpkg -i study-timer_1.0.0_amd64.deb
 ```
